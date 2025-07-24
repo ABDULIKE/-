@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мир Кошек</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1 data-aos="fade-down" data-aos-delay="800">Мир Кошек</h1>
+    <button class="burger" id="burger">&#9776;</button>
+    <nav id="navMenu">
+      <a data-aos="fade-down" data-aos-delay="100" href="#section1">Главная</a>
+      <a data-aos="fade-down" data-aos-delay="200" href="#section2">Породы</a>
+      <a data-aos="fade-down" data-aos-delay="300" href="#section3">О кошках</a>
+      <a data-aos="fade-down" data-aos-delay="400" href="#section4">Галерея</a>
+      <a data-aos="fade-down" data-aos-delay="500" href="#section5">Контакт</a>
+    </nav>
+  </header>
+
+  <section id="section1" class="hero">
+    <h2 data-aos="fade-up">Добро пожаловать в кошачий мир!</h2>
+    <p data-aos="fade-up" data-aos-delay="150">Кошки — удивительные создания, которые делают нашу жизнь уютнее.</p>
+  </section>
+
+  <section id="section2">
+    <h2 data-aos="fade-up">Популярные породы кошек</h2>
+    <img src="./img/i - 2025-07-17T200020.244.webp" alt="Кошки" data-aos="fade-right" class="banner" />
+    <div class="breeds">
+      <div class="breed-item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="./img/i - 2025-07-10T184220.860.webp" alt="Британская" />
+        <p>Британская</p>
+      </div>
+      <div class="breed-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="./img/i - 2025-07-10T184205.154.webp" alt="Сиамская" />
+        <p>Сиамская</p>
+      </div>
+      <div class="breed-item" data-aos="zoom-in" data-aos-delay="300">
+        <img src="./img/i - 2025-07-10T184149.262.webp" alt="Мейн-кун" />
+        <p>Мейн-кун</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section3" class="about">
+    <div>
+      <h2 data-aos="fade-left">Почему мы любим кошек</h2>
+      <p data-aos="fade-up" data-aos-delay="150">Кошки — это не просто питомцы. Они умны, ласковы и чувствуют настроение хозяина.</p>
+    </div>
+    <div data-aos="fade-right" data-aos-delay="300">
+      <img src="./img/i - 2025-07-10T184840.684.webp" alt="Кошка" />
+    </div>
+  </section>
+
+<section id="section4">
+  <h2 data-aos="fade-up" data-aos-delay="200">Галерея</h2>
+  <p data-aos="fade-up" data-aos-delay="300">
+    Если хотите забрать к себе кошку — посмотрите на этих красавцев!
+  </p>
+  <div class="slider" data-aos="fade-up" data-aos-delay="400">
+    <button class="slide-btn" id="prevBtn">&#10094;</button>
+    <img id="sliderImage" src="img/i - 2025-07-24T190459.232.webp" alt="Котик" />
+    <button class="slide-btn" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+  <section id="section5">
+    <h2 data-aos="fade-up">Связаться с нами</h2>
+    <form id="contactForm" data-aos="fade-up" data-aos-delay="200">
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="email" placeholder="Ваш email" required />
+      <textarea placeholder="Ваше сообщение" rows="4" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Мир Кошек. Все права защищены.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 1000,
+    offset: 100,
+    once: true,
+    esing: 'ease-out'
+  });
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
